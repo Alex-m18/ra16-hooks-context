@@ -16,7 +16,7 @@ function App() {
       { loading && <div>{'Loading...'}</div> }
       <List
         items={users}
-        selected={selectedUserID}
+        selectedID={selectedUserID}
         onClick={(id) => setSelectedUserID(id)}
       />
       { selectedUserID && <Details info={users.find((o) => o.id === selectedUserID)}/> }

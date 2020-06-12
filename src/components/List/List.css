@@ -1,0 +1,24 @@
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.list-item {
+  list-style-type: none;
+  padding: 1em;
+  margin-bottom: -1px;
+  margin-left: 0;
+  border: 1px solid grey;
+  background-color: whitesmoke;
+  transition: background-color .1s linear;
+  cursor: pointer;
+}
+
+.list-item:hover {
+  background-color: lightgray;
+}
+
+.list-item.selected {
+  background-color: cornflowerblue;
+  border: 1px solid deepskyblue;
+}
